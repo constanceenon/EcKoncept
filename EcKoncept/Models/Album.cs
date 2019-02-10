@@ -9,6 +9,5 @@ namespace EcKoncept.Models
     {
         public int ID { get; set; }
         public string AlbumTitle { get; set; }
-        public int PictureCount { get; set; }
     }
 }

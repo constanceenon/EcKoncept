@@ -16,9 +16,9 @@ namespace EcKoncept.Managers
         {
             _context = Context;
         }
-        public ContactUs AddContact(ContactUs contact)
+        public Contact AddContact(Contact contact)
         {
-            var entity = new ContactUs
+            var entity = new Contact
             {
                 Name = contact.Name,
                 Phone = contact.Phone,
@@ -27,9 +27,9 @@ namespace EcKoncept.Managers
                 Msg = contact.Msg
 
             };
-            _context.Set<ContactUs>().Add(entity);
+            _context.Set<Contact>().Add(entity);
             _context.SaveChanges();
-            contact.ID = entity.ID;
+            contact.ContactId = entity.ContactId;
             return entity;
         }
     }

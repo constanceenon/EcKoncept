@@ -59,10 +59,10 @@ namespace EcKoncept
             //services.AddDbContext<ApplicationContext>(options =>
             //    options.UseSqlServer(_config.GetConnectionString("DefaultConnection")));
             var conn = "connString";
-            services.AddDbContext<DbContext>(cfg => cfg.UseSqlServer(_config.GetConnectionString(conn)));
+            services.AddDbContext<ApplicationContext>(cfg => cfg.UseSqlServer(_config.GetConnectionString(conn)));
             services.AddScoped<IContactManager, ContactUsManager>();
 
-            services.AddIdentity<AppUser, IdentityRole>()
+            services.AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationContext>()
                 .AddDefaultTokenProviders();
 

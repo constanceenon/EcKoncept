@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EcKoncept.Models
 {
-    public class ApplicationContext : IdentityDbContext<AppUser>
+    public class ApplicationContext : DbContext
     {
 
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
@@ -17,7 +17,7 @@ namespace EcKoncept.Models
         }
 
         public DbSet<Album> Albums { get; set; }
-        public DbSet<ContactUs> ContactUs { get; set; }
+        public DbSet<Contact> ContactUs { get; set; }
         public DbSet<Subscriber> Subscribers { get; set; }
 
     }

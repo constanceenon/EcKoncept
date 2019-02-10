@@ -18,7 +18,7 @@ namespace EcKoncept.Controllers
         }
 
         [HttpPost]
-        public IActionResult Contactus(ContactUs contact)
+        public IActionResult Contactus(Contact contact)
         {
             if (ModelState.IsValid)
             {

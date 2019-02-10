@@ -8,7 +8,7 @@ namespace EcKoncept.Repository.Interfaces
 {
     public interface IContactManager
     {
-        ContactUs AddContact(ContactUs contact);
+        Contact AddContact(Contact contact);
     }
 }
 
