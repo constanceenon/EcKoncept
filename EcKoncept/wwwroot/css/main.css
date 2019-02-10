@@ -1,0 +1,1697 @@
+/* =============================
+   Main CSS stylesheet
+============================= */
+
+/*====== Body Section Start ======*/
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    line-height: 1.8;
+    background: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.container {
+    width: 1010px;
+}
+
+.sticky {
+    z-index: 9999;
+    position: fixed;
+    font-weight: 600;
+    letter-spacing: 1px;
+    top: 0;
+    width: 100%;
+}
+
+a:focus {
+    background: transparent !important;
+    outline: 0;
+    color: inherit;
+    background: transparent;
+}
+
+/*-- scroll to top ---*/
+
+#return-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    z-index: 9999;
+    display: block;
+    position: fixed;
+    background: white;
+    text-decoration: none;
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#return-to-top i {
+    color: black;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#return-to-top:hover {
+    background: white;
+}
+
+#return-to-top:hover i {
+    color: black;
+    top: 5px;
+}
+
+/*====== Header,Nav Section Start ======*/
+
+header {
+    width: 100%;
+    height: 80px;
+    padding: 26px 0;
+    background: #111111;
+}
+
+header .row {
+    text-align: center;
+}
+
+header .social-icons a {
+    color: #0072bc;
+    font-size: 20px;
+    margin-left: 12px;
+}
+
+header p {
+    float: left;
+    opacity: 0.5;
+    color: #ffffff;
+    letter-spacing: 2px
+}
+
+header .social-icons {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    background: #252525;
+    position: absolute;
+    border-bottom: 1px solid #3b3b3b;
+    border-top: 1px solid #3b3b3b;
+}
+
+.navbar-toggle {
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border: 1px solid white;
+    border-radius: 0;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    background: none;
+}
+
+.nav > li > a {
+    padding: 10px 0;
+}
+
+nav ul li .active {
+    text-decoration: underline;
+}
+
+.nav > li > a:hover {
+    text-decoration: underline;
+    background: none;
+    color: white;
+}
+
+}
+
+nav ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav .icon-bar {
+    background-color: black;
+}
+
+.navbar-nav {
+    margin: 0;
+    float: none;
+    text-align: center;
+}
+
+.hidden-xs {
+    margin: 0 7px;
+}
+
+.navbar-collapse {
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/*====== Header,Nav Section Ended ======*/
+
+/*====== Jumbotron Section Start ======*/
+
+.jumbotron {
+    margin: 0;
+    width: 100%;
+    padding-top: 160px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/banners/B1.jpg");
+}
+
+.inner-contant {
+    color: white;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 92px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jumbotron h3 {
+    font-size: 46px;
+    margin: 0 0;
+    padding-bottom: 25px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jumbotron p {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+/*====== Jumbotron Section Ended ======*/
+
+/*====== Portfolio Section Start ======*/
+
+.portfolio {
+    text-align: center;
+}
+
+.filter-button {
+    font-size: 16px;
+    margin-right: 28px;
+    margin-bottom: 10px;
+    border: 1px solid #3e3e3e;
+    border-radius: 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    background: none;
+    display: inline-block;
+}
+
+.portfolio .btn-default:hover {
+    color: #fff;
+    background-color: #000000;
+    border: 1px solid white;
+}
+
+main_portfolio_content {
+    padding-bottom: 120px;
+    display: inline-block;
+}
+
+F .portfolio .portfolio_content .head_title h3,
+h4 {
+    color: #000000;
+}
+
+.gallery_product {
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#blog a:hover {
+    text-decoration: none;
+}
+
+.gallery_product img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery_product:hover .portfolio_images_overlay {
+    top: 0%;
+    left: 0%;
+    outline: 1px solid #423c3a;
+    outline-offset: -10px;
+}
+
+.portfolio_images_overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    padding: 50% 20%;
+    margin: 0 auto;
+    left: 0%;
+    position: absolute;
+    transition: .6s;
+}
+
+.portfolio_images_overlay h6 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    line-height: 2.575rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.portfolio_images_overlay span {
+    font-size: 12px;
+}
+
+/*====== Portfolio Section Ended ======*/
+
+/*====== Services Section Start ======*/
+
+#services {
+    width: 100%;
+    height: auto;
+    padding-top: 115px;
+    background: black;
+}
+
+#services .service-1 {
+    height: auto;
+    margin-bottom: 50px;
+    padding: 40px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.27);
+}
+
+#services .service-1 h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 47.03px;
+    display: inline-block;
+}
+
+#services .service-1 h3 {
+    color: white;
+    font-size: 23px;
+    margin-top: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.service-1 .btn-default,
+.service-1 .btn-default:active,
+.service-1 .btn-default:visited,
+.service-1 .btn-default:focus {
+    width: 206px;
+    height: 101px;
+    float: left;
+    color: black;
+    padding: 32px 0;
+    font-size: 22px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 0;
+}
+
+.service-1 .btn-default:hover {
+    background: #000000;
+    color: white;
+}
+
+#services .service-2 {
+    height: auto;
+
+}
+
+#services .service-2 h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 47.03px;
+    display: inline-block;
+}
+
+#services .service-2 p {
+    color: white;
+    font-size: 23px;
+    padding-bottom: 62px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#services .service-3 {
+    height: auto;
+    margin-bottom: 74px;
+}
+
+#services .service-3 h5 {
+    margin: 0;
+    color: white;
+    font-size: 22px;
+    padding-left: 10px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#services .service-3 .col-1 {
+
+    padding-bottom: 53px;
+}
+
+@media (max-width: 425px) {
+    #services .service-2 h2 {
+        font-size: 29.03px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    #services .service-3 h5 {
+        font-size: 16px;
+        padding-left: 26px;
+    }
+    #services .service-1 h2,
+    service-2 h2 {
+        font-size: 43.03px;
+    }
+    .service-1 .btn-default,
+    .service-1 .btn-default:active,
+    .service-1 .btn-default:visited,
+    .service-1 .btn-default:focus {
+        width: 185px;
+        height: 72px;
+        margin-top: 40px;
+        float: left;
+        font-size: 17px;
+    }
+    .navbar-nav {
+        text-align: left;
+    }
+    nav {
+        height: auto;
+    }
+    header p {
+        text-align: center;
+    }
+    header .social-icons {
+        float: center;
+    }
+    .sb {
+        width: 100%;
+    }
+    .nav > li > a {
+        padding: 5px 0;
+    }
+    .hidden-xs {
+        margin: 0 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li {
+        float: none;
+        display: inline-block;
+    }
+    .navbar-nav {
+        margin: 0;
+        float: none;
+        text-align: center;
+    }
+    .portfolio_images_overlay {
+        padding: 50% 20%;
+    }
+}
+
+/*====== Services Section Ended ======*/
+
+/*====== Contact Section Start ======*/
+
+.col-2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.col-2 ul li {
+    width: 100%;
+    height: 58px;
+    list-style-type: none;
+    float: left;
+    margin-bottom: 48px;
+}
+
+.col-2 ul .bottom {
+    margin-bottom: 0;
+}
+
+.icon {
+    height: 58px;
+    width: 58px;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    background: #d7d7d7;
+}
+
+.icon i {
+    background: #000;
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 4px;
+    font-size: 16px;
+    height: 25px;
+    width: 25px;
+    margin: 16px auto;
+}
+
+.col-2 ul li h5 {
+    float: left;
+    color: white;
+    font-size: 30px;
+    padding-left: 15px;
+    margin: 0;
+    line-height: 58px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*====== Contact Section Ended ======*/
+
+/*====== Blog Section Start ======*/
+
+#blog {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/banners/B2.jpg");
+}
+
+#blog h3 {
+    color: black;
+    font-size: 31.3px;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#blog inner-contant p {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    padding-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#blog .posts {
+    width: 100%;
+    height: 253;
+    opacity: 0.2;
+    margin-top: 40px;
+    background: white;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+#blog p {
+    height: auto;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 8px 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    background-color: rgba(130, 130, 130, 0.6784313725490196);
+}
+
+#blog .post1 {
+    height: 253px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/blog/F6.jpg");
+}
+
+#blog .post2 {
+    height: 253px;
+    background: pink;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/blog/18.jpg");
+}
+
+#blog .post3 {
+    height: 253px;
+    background: pink;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/blog/F4.jpg");
+}
+
+#blog .pg2 {
+    height: auto;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 8px 18px;
+    margin-bottom: 90px;
+    text-transform: uppercase;
+    background-color: rgba(130, 130, 130, 0.6784313725490196);
+}
+
+#blog .pg1 {
+    height: auto;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 8px 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    background-color: rgba(130, 130, 130, 0.6784313725490196);
+}
+
+@media (min-width: 992px) {
+    #blog .col-md-4 {
+        padding-right: 6px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/*====== Blog Section Start ======*/
+
+/*====== Subscribe Section Start ======*/
+
+#Subscribe {
+    width: 100%;
+    height: auto;
+}
+
+#Subscribe .form-group {
+    display: inline-block;
+    padding-right: 35px;
+}
+
+#Subscribe .container {
+    height: auto;
+    padding: 62px;
+    margin-top: 108px;
+    margin-bottom: 108px;
+    border: 1px solid rgba(255, 255, 255, 0.27);
+}
+
+#Subscribe h2 {
+    font-weight: 500;
+    margin-top: 63px;
+    font-size: 47.3px;
+}
+
+#Subscribe h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 19.03px;
+}
+
+#Subscribe .form-control {
+    width: 319px;
+    height: 66px;
+    color: black;
+    border: none;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 0;
+    margin-top: 56px;
+    padding: 6px 12px;
+    margin-bottom: 67px;
+    line-height: 1.42857143;
+    background-color: #ffffff;
+}
+
+@media (max-width: 425px) {
+    #Subscribe .form-control {
+        width: 100%;
+        margin: 0;
+    }
+    #Subscribe .form-group {
+        display: block;
+        padding-right: 0;
+    }
+    #Subscribe .form-inline {
+        padding: 30px 0;
+    }
+    #Subscribe .form-group {
+        margin-bottom: 27px;
+    }
+    #Subscribe .btn {
+        float: left;
+    }
+    #Subscribe h3 {
+        line-height: 25px;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        padding-bottom: 15px;
+    }
+    #Subscribe .container {
+        padding: 62px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #Subscribe h2 {
+        margin-top: 0;
+        font-size: 29px;
+        text-align: left;
+    }
+}
+
+#Subscribe .btn {
+    width: 207px;
+    height: 66px;
+    color: white;
+    margin-top: -4px;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 0;
+    background: #464646;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Subscribe .btn-default:hover {
+    background: #000000;
+    color: white;
+    border: 1px solid white;
+}
+
+@media (min-width: 768px) {
+    .form-inline .form-group {
+        display: inline-block;
+        margin-right: 37px;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+}
+
+#Subscribe ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #cacaca;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Subscribe ::-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #cacaca;
+}
+
+#Subscribe ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #cacaca;
+}
+
+/*====== Subscribe Section Ended ======*/
+
+/*====== footer Section Start ======*/
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.27);
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+footer img {
+    margin-top: 7px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.59);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer span a {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+footer span a:hover {
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+}
+
+footer address {
+    color: rgba(255, 255, 255, 0.59);
+    line-height: 2;
+}
+
+footer h5 {
+    font-size: 16px;
+    padding-bottom: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+footer h2 {
+    color: white;
+
+}
+
+footer p {
+    font-size: 12px;
+    padding-right: 20px;
+    padding-top: 30px;
+    color: #4f4f4f;
+}
+
+footer textarea.form-control {
+    width: 100%;
+    height: auto;
+}
+
+footer .form-control {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: white;
+    background-color: #414141;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+footer .btn {
+    float: right;
+    background: white;
+    color: #414141;
+    border: none;
+    width: 130px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+footer ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.5;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+    /* Firefox */
+}
+
+footer :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #8b8b8b;
+}
+
+footer ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #8b8b8b;
+}
+
+footer .btn-default:hover {
+    color: #fff;
+    background-color: #000000;
+    border: 1px solid white;
+}
+
+@media (min-width: 992px) {
+    footer form .col-md-6 {
+        width: 47.5%;
+        padding-right: 0;
+    }
+}
+
+/*====== footer Section Ended ======*/
+
+/*====== Media Section Start ======*/
+
+/* On screens that are 992px or less */
+
+@media screen and (max-width: 768px) {
+    header .website {
+        padding: 0;
+    }
+    header {
+        padding: 5px 0;
+        height: auto;
+    }
+    header p {
+        float: none;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    header .social-icons {
+        float: none;
+        text-align: center;
+    }
+
+    header .social-icons {
+        padding-left: 0;
+    }
+    nav {
+        height: auto;
+    }
+    nav ul {
+        text-align: left;
+    }
+    header .social-icons a {
+        margin: 7px;
+    }
+    header .row {
+        padding-top: 10px;
+    }
+    .jumbotron {
+        height: auto;
+    }
+    .inner-contant {
+        margin-top: 30px;
+    }
+    .jumbotron h1 {
+        font-size: 60px;
+        padding: 32px 0;
+    }
+    .jumbotron p {
+        font-size: 14px;
+        margin-bottom: 100px;
+    }
+    .filter-button {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        margin-right: 8px;
+    }
+    .portfolio_images_overlay h6 {
+        font-size: 20px;
+        line-height: 3rem;
+        font-weight: 500;
+    }
+    #Subscribe .container {
+        border: none;
+    }
+    #services .service-3 ul li h5 {
+        color: white;
+        font-size: 18px;
+        padding-left: 15px;
+        line-height: 58px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .jumbotron h1 {
+        font-size: 39px;
+        font-weight: 500;
+    }
+    .jumbotron h3 {
+        font-size: 21px;
+        padding: 20px 0;
+    }
+    .jumbotron p {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+    }
+    header p {
+        margin-bottom: 5px;
+    }
+    #services .service-1 h2,
+    service-2 h2 {
+        font-size: 29.03px;
+    }
+    #services .service-1 h3 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .service-1 .btn-default,
+    .service-1 .btn-default:active,
+    .service-1 .btn-default:visited,
+    .service-1 .btn-default:focus {
+        width: 136px;
+        height: 49px;
+        padding-top: 13px;
+        margin-top: 28px;
+        font-size: 14px;
+    }
+    #services .service-3 .col-1 {
+        padding-bottom: 20px;
+    }
+    #services .service-2 p {
+        font-size: 18px;
+        padding-bottom: 19px;
+    }
+    .icon {
+        height: 46px;
+        width: 47px;
+    }
+    .icon i {
+        margin: 10px auto;
+    }
+    #blog h3 {
+        font-size: 29.3px;
+    }
+    #blog p {
+        font-size: 12px;
+    }
+    #Subscribe .form-control {
+        height: 50px;
+        font-size: 12px;
+    }
+    #Subscribe .btn {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+}
+
+/*========================================================================================*/
+
+/* ----------------
+Photography CSS stylesheet
+---------------- */
+
+/*---- Banner Section Start ----*/
+
+.inner-contant {
+    margin-top: 0;
+    padding-bottom: 180px;
+}
+
+.load-more {
+    text-align: center;
+}
+
+.load-more .btn {
+    width: 100px;
+    height: 100px;
+    border: 0;
+    color: #656565;
+    font-size: 16px;
+    margin-top: 78px;
+    margin-bottom: 166px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    background: rgba(37, 37, 37, 0.6509803921568628);
+}
+
+.btn btn-default {
+    float: left;
+}
+
+/*========================================================================================*/
+
+/* ----------------
+Contact CSS stylesheet
+---------------- */
+
+/*---- Contact Section Start ----*/
+
+#contact p {
+    font-size: 13px;
+    padding-bottom: 50px;
+    color: rgba(255, 255, 255, 0.7019607843137254);
+}
+
+#contact .btn {
+    height: 50px;
+    border: 0;
+    color: white;
+    padding: 10px 25px;
+    font-size: 21px;
+    margin-top: 18px;
+    font-weight: 300;
+    border-radius: 0;
+    background: #39b54a;
+    text-transform: uppercase;
+}
+
+#contact .form-control {
+    height: 58px;
+    font-size: 16px;
+    border-radius: 0;
+    margin-bottom: 20px;
+    background: white;
+}
+
+#contact ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #cacaca;
+    font-size: 16px;
+    font-weight: 300;
+    /* Firefox */
+}
+
+#contact ::-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #cacaca;
+}
+
+#contact ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #cacaca;
+}
+
+/*========================================================================================*/
+
+/* ----------------
+Blog CSS stylesheet
+---------------- */
+
+#blog-page .bt ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#blog-page .bt ul li {
+    background: white;
+    display: inline-flex;
+}
+
+#blog-page .bt ul li a {
+    width: 55px;
+    height: 56px;
+    margin: 0 auto;
+    color: black;
+    font-size: 24px;
+    padding: 8px 0;
+    color: black;
+    text-decoration: none;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+#contact {
+    margin-bottom: 285px;
+}
+
+#blog-page a {
+    text-decoration: none;
+}
+
+#blog-page .bt .active {
+    background-color: #00bff3;
+    color: white;
+}
+
+#blog-page .bt a:hover {
+    background-color: #00bff3;
+    color: white;
+}
+
+/*====== Blog Section Start ======*/
+
+#blog-page {
+    width: 100%;
+    height: auto;
+    padding-top: 88px;
+    background: black;
+}
+
+#blog-page img {
+    height: 253px;
+}
+
+#blog-page .btn {
+    bottom: 185px;
+    left: 32px;
+    position: absolute;
+    text-transform: uppercase;
+    background-color: rgba(130, 130, 130, 0.6784313725490196);
+}
+
+#blog-page h5 {
+    color: white;
+    padding: 0 35px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.post1 h2,
+.post2 h2,
+.post3 h2 {
+    height: auto;
+    color: #fff;
+    padding-right: 11px;
+    border: none;
+    font-size: 20px;
+    border-radius: 0;
+}
+
+#blog-page .btn {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0;
+}
+
+.carousel-caption {
+    right: 0%;
+    bottom: 10px;
+    left: 2%;
+    padding-top: 0;
+    text-align: left;
+    padding-bottom: 0;
+}
+
+/*====== Blog Section Ended ======*/
+
+/*====== Blog-page Section Start ======*/
+
+#blog-page figure img {
+    width: 100%;
+    height: 585px;
+    margin-bottom: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#blog-page .col-xs-12 {
+    margin-bottom: 10px;
+}
+
+#blog-page h4 {
+    color: white;
+    opacity: 0.6;
+    font-size: 17px;
+}
+
+#blog-page h4 span {
+    font-weight: 600;
+    opacity: 1;
+}
+
+#blog-page .heading1 {
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 51px;
+    padding-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#blog-page .heading2 {
+    font-size: 39px;
+    font-weight: 400;
+    padding-bottom: 40px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#blog-page .social-links li {
+    width: 120px;
+    height: 32px;
+    color: white;
+    padding: 3px 0;
+    cursor: pointer;
+    font-weight: 300;
+    margin-right: 16px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+    font-family: 'Hammersmith One', sans-serif;
+
+}
+
+#blog-page .social-links {
+    text-align: right;
+}
+
+#blog-page .social-links li span {
+    padding-left: 20px;
+}
+
+#blog-page .social-links li a {
+    color: white;
+    font-size: 12px;
+}
+
+#blog-page .break {
+
+    display: block;
+}
+
+#blog-page .inner-contant p {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+#blog-page .inner-contant p a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.72);
+    color: rgba(255, 255, 255, 0.72);
+}
+
+#blog-page .inner-contant p a:hover {
+    text-decoration: none;
+    border-bottom: none;
+    color: white;
+}
+
+#blog-page p {
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 25px;
+    text-align: left;
+}
+
+#blog-page p {
+    padding-bottom: 30px;
+}
+
+#blog-page h6 {
+    font-size: 27px;
+    line-height: 1.5;
+    padding-bottom: 50px;
+    text-align: left;
+    font-style: italic;
+    word-spacing: 1px;
+    letter-spacing: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 1024px) {
+    .jumbotron h1 {
+        font-size: 60px;
+    }
+    .portfolio_images_overlay h6 {
+        font-size: 14px;
+        margin: -20px 0;
+    }
+    .jumbotron h3 {
+        font-size: 30px;
+        margin: 0 0;
+        padding-bottom: 12px;
+    }
+    #services {
+        padding-top: 50px;
+    }
+    #services .service-1 h2 {
+        font-size: 36px;
+    }
+    #services .service-2 h2 {
+        font-size: 36px;
+    }
+    #services .service-1 h3 {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        margin-top: 8px;
+    }
+    #services .service-2 p {
+        color: white;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        padding-bottom: 40px;
+    }
+    #services .service-1 {
+        margin-bottom: 30px;
+        padding: 30px 10px;
+    }
+    #services .service-3 .col-1 {
+        padding-bottom: 40px;
+    }
+    #blog h3 {
+        padding-top: 30px;
+    }
+    #Subscribe .container {
+        padding: 62px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #Subscribe .form-control {
+        height: 55px;
+        margin: 30px 0;
+    }
+    #Subscribe h2 {
+        margin-top: 30px;
+        font-size: 42px;
+    }
+    .service-1 .btn-default,
+    .service-1 .btn-default:active,
+    .service-1 .btn-default:visited,
+    .service-1 .btn-default:focus {
+        height: 94px;
+        padding: 32px 0;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .load-more .btn {
+        width: 86px;
+        height: 86px;
+        font-size: 12px;
+        margin-top: 24px;
+        margin-bottom: 55px;
+    }
+    #blog-page {
+        padding-top: 0;
+    }
+    #blog-page .social-links {
+        text-align: left;
+        padding: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    #blog-page {
+        padding-top: 0;
+    }
+    #blog-page h6 {
+        font-size: 23px;
+    }
+    #blog-page .heading1 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 45px;
+        padding-bottom: 15px;
+    }
+    #blog-page .heading2 {
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    #blog-page .social-links li {
+        width: 40%;
+        margin: 10px 0;
+        height: 32px;
+        display: block;
+    }
+    #blog-page .break {
+        display: inline;
+    }
+    #blog-page .image {
+        height: 400px;
+    }
+    .jumbotron h1 {
+        font-size: 34px;
+        padding: 0;
+    }
+    .jumbotron {
+        height: 465px;
+        padding-top: 100px;
+    }
+    .jumbotron h3 {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+    }
+    #services .service-1 h2 {
+        font-size: 30px;
+    }
+    #services .service-1 h3 {
+        font-size: 19px;
+        line-height: 25px;
+        letter-spacing: 0.5px;
+        margin-bottom: 20px;
+    }
+    .service-1 .btn-default,
+    .service-1 .btn-default:active,
+    .service-1 .btn-default:visited,
+    .service-1 .btn-default:focus {
+        height: 60px;
+        width: 180px;
+        padding: 19px 0;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    #services .service-2 h2 {
+        font-size: 30px;
+    }
+    #services .service-2 p {
+        padding-bottom: 20px;
+    }
+    #services .service-3 .col-1 {
+        padding-bottom: 20px;
+    }
+    #services .service-3 {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .logo img {
+        padding: 8px 0;
+    }
+}
+
+/*====== Blog-page Section Ended ======*/
+
+/*====== About Section Ended ======*/
+
+.about .image {
+    width: 100%;
+    height: 498px;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/blog/F3.jpg");
+}
+
+.about .about-contant p {
+    font-size: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: 300;
+    color: #8b8b8b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+    .about .about-contant p {
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        text-align: left;
+    }
+    .inner-contant {
+        margin-top: 0;
+        padding-bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about .image {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 32px;
+    }
+    .portfolio_images_overlay h6 {
+        font-size: 9px;
+        line-height: 2rem;
+        margin: -8px auto;
+    }
+    .portfolio_images_overlay span {
+        font-size: 9px;
+    }
+    .about .image {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 32px;
+    }
+    .about .about-contant p {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+    .post1 h2,
+    .post2 h2,
+    .post3 h2 {
+        font-size: 17px;
+        letter-spacing: 0.5px;
+        line-height: 25px;
+    }
+    #blog .pg2 {
+        letter-spacing: 0.5px;
+        padding: 12px 18px;
+    }
+    #Subscribe h2 {
+        margin-top: 0;
+        font-size: 30px;
+    }
+}
+
+/*====== Blog-page Section Ended ======*/
+
+#career .career-img {
+    width: 185px;
+    height: 185px;
+}
+
+#career .contant h3 {
+    color: white;
+    margin: 0;
+    font-size: 28px;
+    text-align: left;
+    padding-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#career .row {
+    padding-bottom: 100px;
+}
+
+#career .contant p {
+    color: white;
+    font-size: 15px;
+    opacity: 0.5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-contant {
+    padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #career .career-img {
+        width: 100%;
+        height: 248px;
+        object-fit: cover;
+    }
+    #contact p {
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        line-height: 28px;
+    }
+    #contact {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #career .contant {
+        padding: 0 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .main_portfolio_content .col-xs-12 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .gallery_product {
+        padding: 5px 5px;
+    }
+    #career .career-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    #contact .form-control {
+        height: 39px;
+        font-size: 12px;
+    }
+    #career .contant h3 {
+        font-size: 19px;
+    }
+    #career .contant p {
+        color: white;
+        font-size: 12px;
+        line-height: 25px;
+        letter-spacing: 0.5px;
+        opacity: 0.5;
+        text-align: justify;
+        font-family: 'Montserrat', sans-serif;
+    }
+    #career .row {
+        padding-bottom: 50px;
+    }
+}
+
+.btn-default.active,
+.btn-default:active,
+.open > .dropdown-toggle.btn-default {
+    color: white !important;
+    background-color: rgba(117, 117, 117, 0.51) !important;
+    border: none;
+}
+
+
+
+
+
+

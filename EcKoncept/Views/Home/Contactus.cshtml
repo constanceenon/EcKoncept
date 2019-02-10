@@ -1,0 +1,84 @@
+﻿@model EcKoncept.Models.ContactUs
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!---- Banner Section Start ---->
+<section class="jumbotron" style="height: 288px; margin-bottom: 62px;padding-top: 95px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 inner-contant">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Contact Us</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<!---- Banner Section Ended ---->
+
+<section id="contact">
+    <!---- Container Section Start ---->
+    <div class="container">
+
+        <!-- First Row Start -->
+        <div class="row">
+            <div class="col-lg-12" data-aos="zoom-in-up" data-aos-duration="2000">
+
+                <h1><em>For Inquiries</em></h1>
+
+                <h2>Call  <br />+2348133708327</h2>
+            </div>
+        </div>
+        <!-- First Row Ended -->
+        <!-- Second Row Start -->
+        <div class="row">
+            <div class="col-md-12" data-aos="zoom-in-up" data-aos-duration="2000">
+                <form class="contact-form" action="" method="post">
+                    <ul class="list-unstyled">
+                        <li class="row form-group">
+                            <div class="col-sm-6 col-md-6">
+                                @*<input required type="text" name="@mod" class="form-control" placeholder="@Model.Name">*@
+                                @Html.LabelFor(model => model.Name)
+                                @Html.EditorFor(model => model.Name, new { HtmlAttribute = new { @class = "form-control" }})
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <input required type="text" name="" class="form-control" placeholder="Email">
+                            </div>
+                        </li>
+                        <li class="row form-group">
+                            <div class="col-sm-6 col-md-6">
+                                <input required type="text" name="" class="form-control" placeholder="Phone">
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <input  type="text" name="" class="form-control" placeholder="Website">
+                            </div>
+                        </li>
+                        <li class="row form-group">
+                            <div class="col-sm-12 col-md-12">
+                                <textarea required class="form-control massage" name="" placeholder="Message" rows="5" style="border-radius: 0;height: 150px;"></textarea>
+                            </div>
+                        </li>
+                        <li class="row form-group">
+                            <div class="col-sm-6 col-md-6">
+                                <button type="submit" value="contactus" class="btn btn-default">Contact</button>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <!-- First Row Ended -->
+    </div>
+    <!---- Container Section Ended ---->
+</section>
+
+<!---- Footer Section Start ---->
+<!---- Footer Section Ended ---->
+<!-- jQuery (plugins) -->
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/javascript.js"></script>
+<script src="js/animate.js"></script>
+
+
+
