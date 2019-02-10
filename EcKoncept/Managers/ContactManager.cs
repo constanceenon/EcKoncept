@@ -1,4 +1,5 @@
 ﻿using EcKoncept.Models;
+using EcKoncept.Models.Domain;
 using EcKoncept.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -8,15 +9,15 @@ using System.Threading.Tasks;
 
 namespace EcKoncept.Managers
 {
-    public class ContactUsManager : IContactManager
+    public class ContactManager : IContactManager
     {
         private DbContext _context;
 
-        public ContactUsManager(DbContext Context)
+        public ContactManager(DbContext Context)
         {
             _context = Context;
         }
-        public Contact AddContact(Contact contact)
+        public async Task<Contact> AddContact(Contact contact)
         {
             var entity = new Contact
             {
@@ -28,7 +29,7 @@ namespace EcKoncept.Managers
 
             };
             _context.Set<Contact>().Add(entity);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
             contact.ContactId = entity.ContactId;
             return entity;
         }

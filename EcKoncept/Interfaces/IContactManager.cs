@@ -1,4 +1,5 @@
 ﻿using EcKoncept.Models;
+using EcKoncept.Models.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ namespace EcKoncept.Repository.Interfaces
 {
     public interface IContactManager
     {
-        Contact AddContact(Contact contact);
+        Task<Contact> AddContact(Contact contact);
     }
 }
 

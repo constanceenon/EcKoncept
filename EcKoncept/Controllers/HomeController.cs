@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using EcKoncept.Models;
+using EcKoncept.Models.Domain;
 using EcKoncept.Repository.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcKoncept.Controllers
@@ -18,11 +20,11 @@ namespace EcKoncept.Controllers
         }
 
         [HttpPost]
-        public IActionResult Contactus(Contact contact)
+        public async Task<IActionResult> Contactus(Contact contact)
         {
             if (ModelState.IsValid)
             {
-                _contactManager.AddContact(contact);
+                await _contactManager.AddContact(contact);
                 return Content("Done");
             }
             string name = contact.Name;

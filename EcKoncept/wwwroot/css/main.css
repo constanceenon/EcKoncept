@@ -1690,8 +1690,6 @@ Blog CSS stylesheet
     border: none;
 }
 
-
-
-
-
-
+.page-container{
+    margin-top: 80px;
+}
