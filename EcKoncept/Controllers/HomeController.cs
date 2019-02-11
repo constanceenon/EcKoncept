@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EcKoncept.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private IContactManager _contactManager;

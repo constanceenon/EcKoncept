@@ -22,6 +22,7 @@ namespace EcKoncept.Infrastructure.Data
         public DbSet<Contact> ContactUs { get; set; }
         public DbSet<Subscriber> Subscribers { get; set; }
         public DbSet<Picture> Pictures { get; set; }
+        public DbSet<User> Users { get; set; }
 
     }
 }

@@ -3,13 +3,27 @@
     ViewData["Title"] = "Login";
 }
 
+
 <div class="page-container container-fluid">
-    
+
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
             <h2>Login</h2>
-            <hr/>
+            <hr />
+            @{
+                var error = TempData["error"] as string;
+                if (!string.IsNullOrEmpty(error))
+                {
+                    <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <strong>Error</strong> @error
+                    </div>
+                }
+            }
             <form asp-action="login" class="form-horizontal">
+                <input type="hidden" asp-for="ReturnUrl" />
                 <div class="form-group">
                     <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
                     <div class="col-sm-10">
@@ -34,11 +48,12 @@
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <button type="submit" class="btn btn-primary"><i class="fa fa-lock"></i> Sign in</button>
+                        <a href="@Url.Action("register")" class="btn btn-warning"><i class="fa fa-lock"></i> Sign Up</a>
                     </div>
                 </div>
             </form>
         </div>
     </div>
-    
+
 </div>
 

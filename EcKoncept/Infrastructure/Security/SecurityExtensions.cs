@@ -15,6 +15,7 @@ namespace EcKoncept.Infrastructure.Security
         public static void AddSecurity(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<IUserStore<User>, UserStore>();
+            services.AddScoped<IRoleStore<string>, RoleStore>();
             services.AddScoped<UserManager<User>>();
 
             services.AddIdentity<User, string>()
